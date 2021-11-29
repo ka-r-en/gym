@@ -3,7 +3,7 @@ import { ClienteComponent } from './components/cliente/cliente.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AgregarClienteComponent } from './components/cliente/agregar-cliente/agregar-cliente.component';
-import { ModificarClienteComponent } from './components/cliente/modificar-cliente/modificar-cliente.component';
+import { EditarClienteComponent } from './components/cliente/editar-cliente/editar-cliente.component';
 import { RegistroComponent } from './components/registro/registro.component';
 import { EntrenadorComponent } from './components/entrenador/entrenador.component';
 import { RutinaComponent } from './components/rutina/rutina.component';
@@ -11,12 +11,13 @@ import { EjercicioComponent } from './components/ejercicio/ejercicio.component';
 import { DietaComponent } from './components/dieta/dieta.component';
 import { DietacompletadaComponent } from './components/dietacompletada/dietacompletada.component';
 import { UsuarioComponent } from './components/usuario/usuario.component';
+import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
-  {path: '', redirectTo:'/cliente', pathMatch:'full'},
+
   {path: 'cliente', component:ClienteComponent},
-  {path: 'add', component:AgregarClienteComponent},
-  {path: 'edit', component:ModificarClienteComponent},
+  {path: 'agregar-cliente', component:AgregarClienteComponent},
+  {path: '', redirectTo:'/avance', pathMatch:'full'},
   {path: 'avance', component:AvanceComponent},
   {path: '', redirectTo:'/registro', pathMatch:'full'},
   {path: 'registro', component:RegistroComponent},
