@@ -11,5 +11,8 @@ export class AgregarClienteComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  enviarDatos():any {
+    console.log("Me presionaste");
+  }
 
 }
