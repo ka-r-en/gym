@@ -11,5 +11,7 @@ export class AgregarAvanceComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  enviarDatos():any {
+    console.log("Me presionaste");
+  }
 }
