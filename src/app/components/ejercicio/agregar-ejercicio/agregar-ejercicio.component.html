@@ -4,34 +4,34 @@
   </div>
   <div class="card-body">
 
-    <form (ngSubmit)="enviarDatos()" >
+    <form [formGroup]="formularioDeEjercicio" (ngSubmit)="enviarDatos()" >
      <div class="mb-3">
        <label for="" class="form-label">IdEjercicio</label>
        <input type="number"
-        class="form-control" name="" id="" aria-describedby="helpId" placeholder="Ingrese IdEjercicio:">
+        class="form-control" name="" formControlName="IdEjercicio" id="" aria-describedby="helpId" placeholder="Ingrese IdEjercicio:">
     </div>
     <div class="mb-3">
       <label for="" class="form-label">IdRutina</label>
       <input type="number"
-        class="form-control" name="" id="" aria-describedby="helpId" placeholder="Ingrese IdRutina:">
+        class="form-control" name="" formControlName="IdRutina" id="" aria-describedby="helpId" placeholder="Ingrese IdRutina:">
     </div>
     <div class="mb-3">
       <label for="" class="form-label">IdEntrenador</label>
       <input type="number"
-        class="form-control" name="" id="" aria-describedby="helpId" placeholder="Ingrese IdEntrenador:">
+        class="form-control" name="" formControlName="IdEntrenador" id="" aria-describedby="helpId" placeholder="Ingrese IdEntrenador:">
     </div>
     <div class="mb-3">
       <label for="" class="form-label">IdCliente</label>
       <input type="text"
-        class="form-control" name="" id="" aria-describedby="helpId" placeholder="Ingrese IdCliente:">
+        class="form-control" name="" formControlName="IdCliente" id="" aria-describedby="helpId" placeholder="Ingrese IdCliente:">
       </div>
       <div class="mb-3">
        <label for="" class="form-label">Descripcion_Ej</label>
        <input type="text"
-         class="form-control" name="" id="" aria-describedby="helpId" placeholder="Ingrese DescripcionEjemplo:">
+         class="form-control" name="" formControlName="Descripcion_Ej" id="" aria-describedby="helpId" placeholder="Ingrese DescripcionEjemplo:">
      </div>
       <div class="btn-group" role="group" aria-label="">
-      <button type ="button" class="btn btn-warning btn-lg" >Agregar</button>
+      <button type ="submit" class="btn btn-warning btn-lg" >Agregar</button>
       <button type ="button" class="btn btn-danger btn-lg" >Cancelar</button>
     </div>
   </form>
