@@ -11,5 +11,8 @@ export class AgregarRegistroComponent implements OnInit {
 
   ngOnInit(): void {
   }
+   enviarDatos():any {
+    console.log("Me presionaste");
+  }
 
 }
