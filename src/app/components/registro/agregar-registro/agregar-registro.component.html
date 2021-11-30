@@ -4,34 +4,34 @@
   </div>
   <div class="card-body">
 
-    <form (ngSubmit)="enviarDatos()" >
+    <form [formGroup]="formularioDeRutinas" (ngSubmit)="enviarDatos()" >
      <div class="mb-3">
        <label for="" class="form-label">IdProgreso</label>
        <input type="number"
-         class="form-control" name="" id="" aria-describedby="helpId" placeholder="IdCliente">
+         class="form-control" name="" formControlName="IdProgreso" id="" aria-describedby="helpId" placeholder="IdCliente">
      </div>
      <div class="mb-3">
       <label for="" class="form-label">IdCliente</label>
       <input type="number"
-        class="form-control" name="" id="" aria-describedby="helpId" placeholder="Ingrese Nombre:">
+        class="form-control" name="" formControlName="IdCliente" id="" aria-describedby="helpId" placeholder="Ingrese Nombre:">
     </div>
     <div class="mb-3">
       <label for="" class="form-label">Fecha</label>
       <input type="date"
-        class="form-control" name="" id="" aria-describedby="helpId" placeholder="Ingrese Edad:">
+        class="form-control" name="" formControlName="Fecha" id="" aria-describedby="helpId" placeholder="Ingrese Edad:">
     </div>
     <div class="mb-3">
       <label for="" class="form-label">Peso</label>
       <input type="text"
-        class="form-control" name="" id="" aria-describedby="helpId" placeholder="Ingrese Sexo:">
+        class="form-control" name="" formControlName="Peso" id="" aria-describedby="helpId" placeholder="Ingrese Sexo:">
     </div>
     <div class="mb-3">
       <label for="" class="form-label">Talla</label>
       <input type="text"
-        class="form-control" name="" id="" aria-describedby="helpId" placeholder="Ingrese PesoInicial:">
+        class="form-control" name="" formControlName="Talla" id="" aria-describedby="helpId" placeholder="Ingrese PesoInicial:">
     </div>
       <div class="btn-group" role="group" aria-label="">
-      <button type ="button" class="btn btn-warning btn-lg" >Agregar</button>
+      <button type ="submit" class="btn btn-warning btn-lg" >Agregar</button>
       <button type ="button" class="btn btn-danger btn-lg" >Cancelar</button>
     </div>
     </form>
