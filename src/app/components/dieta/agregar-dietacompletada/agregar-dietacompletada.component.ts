@@ -11,5 +11,7 @@ export class AgregarDietacompletadaComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  enviarDatos():any {
+    console.log("Me presionaste");
+  }
 }
