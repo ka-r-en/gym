@@ -4,49 +4,49 @@
   </div>
   <div class="card-body">
 
-    <form (ngSubmit)="enviarDatos()" >
+    <form [formGroup]="formularioDeClientes (ngSubmit)="enviarDatos()" >
      <div class="mb-3">
        <label for="" class="form-label">IdCliente</label>
        <input type="number"
-         class="form-control" name="" id="" aria-describedby="helpId" placeholder="IdCliente">
+         class="form-control" name="" formControlName="IdCliente" id="" aria-describedby="helpId" placeholder="IdCliente">
      </div>
      <div class="mb-3">
       <label for="" class="form-label">Nombre</label>
       <input type="text"
-        class="form-control" name="" id="" aria-describedby="helpId" placeholder="Ingrese Nombre:">
+        class="form-control" name="" formControlName="Nombre" id="" aria-describedby="helpId" placeholder="Ingrese Nombre:">
     </div>
     <div class="mb-3">
       <label for="" class="form-label">Edad</label>
       <input type="text"
-        class="form-control" name="" id="" aria-describedby="helpId" placeholder="Ingrese Edad:">
+        class="form-control" name="" formControlName="Edad" id="" aria-describedby="helpId" placeholder="Ingrese Edad:">
     </div>
     <div class="mb-3">
       <label for="" class="form-label">Sexo</label>
       <input type="text"
-        class="form-control" name="" id="" aria-describedby="helpId" placeholder="Ingrese Sexo:">
+        class="form-control" name="" formControlName="Sexo" id="" aria-describedby="helpId" placeholder="Ingrese Sexo:">
     </div>
     <div class="mb-3">
       <label for="" class="form-label">Peso_inicial</label>
       <input type="number"
-        class="form-control" name="" id="" aria-describedby="helpId" placeholder="Ingrese PesoInicial:">
+        class="form-control" name="" formControlName="Peso_inicial" id="" aria-describedby="helpId" placeholder="Ingrese PesoInicial:">
     </div>
     <div class="mb-3">
       <label for="" class="form-label">Peso_meta</label>
       <input type="number"
-        class="form-control" name="" id="" aria-describedby="helpId" placeholder="Ingrese PesoMeta:">
+        class="form-control" name="" formControlName="Peso_meta" id="" aria-describedby="helpId" placeholder="Ingrese PesoMeta:">
     </div>
     <div class="mb-3">
       <label for="" class="form-label">Talla_inicial</label>
       <input type="text"
-        class="form-control" name="" id="" aria-describedby="helpId" placeholder="Ingrese TallaInicial:">
+        class="form-control" name="" formControlName="Talla_inicial" id="" aria-describedby="helpId" placeholder="Ingrese TallaInicial:">
     </div>
     <div class="mb-3">
       <label for="" class="form-label">Talla_meta</label>
       <input type="text"
-        class="form-control" name="" id="" aria-describedby="helpId" placeholder="Ingrese TallaMeta:">
+        class="form-control" name="" formControlName="Talla_meta" id="" aria-describedby="helpId" placeholder="Ingrese TallaMeta:">
     </div>
       <div class="btn-group" role="group" aria-label="">
-      <button type ="button" class="btn btn-warning btn-lg" >Agregar</button>
+      <button type ="submit" class="btn btn-warning btn-lg" >Agregar</button>
       <button type ="button" class="btn btn-danger btn-lg" >Cancelar</button>
 
     </div>
